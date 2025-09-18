@@ -1,5 +1,5 @@
 import '@/app/ui/global.css';
-import { inter, firaCode } from '@/app/ui/fonts';
+import { firaCode } from '@/app/ui/fonts';
 
 export default function RootLayout({
   children,

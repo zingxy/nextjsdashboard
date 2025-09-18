@@ -1,11 +1,14 @@
-import { Inter, Fira_Code, Lusitana } from 'next/font/google';
+import { Inter, Lusitana, Fira_Code } from 'next/font/google';
 
 export const inter = Inter({
   subsets: ['latin'],
 });
-
-export const firaCode = Fira_Code();
+export const firaCode = Fira_Code({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+});
 
 export const lusitana = Lusitana({
   weight: ['400', '700'],
+  subsets: ['latin'],
 });
