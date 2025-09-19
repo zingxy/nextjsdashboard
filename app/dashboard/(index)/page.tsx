@@ -8,8 +8,8 @@ import {
   fetchCardData,
 } from '@/app/lib/data';
 import { Suspense } from 'react';
-import { LatestInvoicesSkeleton, RevenueChartSkeleton } from '../ui/skeletons';
-
+import { LatestInvoicesSkeleton, RevenueChartSkeleton } from '@/app/ui/skeletons';
+export const experimental_ppr = true;
 export default async function Page() {
   const {
     numberOfCustomers,
@@ -37,7 +37,7 @@ export default async function Page() {
           <RevenueChart />
         </Suspense>
         <Suspense fallback={<LatestInvoicesSkeleton />}>
-          <LatestInvoices  />
+          <LatestInvoices />
         </Suspense>
       </div>
     </main>
